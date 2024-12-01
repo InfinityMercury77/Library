@@ -490,6 +490,7 @@ end
 
 local Main = Rayfield.Main
 local MPrompt = Rayfield:FindFirstChild('Prompt')
+MPrompt.Title = 'Show Infinity Hub'
 local Topbar = Main.Topbar
 local Elements = Main.Elements
 local LoadingFrame = Main.LoadingFrame
@@ -921,7 +922,7 @@ local function Hide(notify: boolean?)
 	end
 
 	task.spawn(closeSearch)
-
+	
 	Debounce = true
 	if notify then
 		if useMobilePrompt then 
